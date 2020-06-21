@@ -1,0 +1,36 @@
+$current: #22d5da
+$lightgray: #e0e0e0
+$font-color: #636363
+
+=lato
+    font-family: Lato,Helvetica,Sans-serif
+    font-weight: 400
+
+=nunito
+    font-family: Nunito,Helvetica,Sans-serif
+    font-weight: 800
+
+=center
+    display: flex
+    justify-content: center
+    align-items: center
+
+=rmax($width)
+    @media only screen and (max-width: $width+ "px")
+        @content
+
+=rmin($width)
+    @media only screen and (min-width: $width+ "px")
+        @content
+
+=tr
+     transition: 0.35s all ease
+
+@mixin fz($d320, $d760: $d320, $d1200: $d760, $d1900: $d1200)
+    font-size: $d320+px
+    +rmin(760)
+        font-size: $d760+px
+    +rmin(1200)
+        font-size: $d1200+px
+    +rmin(1900)
+        font-size: $d1900+px
