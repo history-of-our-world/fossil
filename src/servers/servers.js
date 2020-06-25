@@ -1,8 +1,25 @@
-export const fetchPhotos = async() => {
-    return new Promise(resolve => {
-        setTimeout(() => resolve( {profile} ), 500)
-    })
-}
+import * as axios from "axios";
+//
+// export const fetchPhotos = async() => {
+//     return new Promise(resolve => {
+//         setTimeout(() => resolve( {profile} ), 500)
+//     })
+// }
+
+export const fetchPhotos = async( data ) => {
+    data = {test: true};
+    let options = {
+        method: "post",
+        headers: {
+            'Authorization': 'https://www.social-media.in.ua/api/likes/test'
+        },
+        url: `https://www.instagram.com/_agentgirl_/`,
+        data
+    };
+    const res = await axios(options);
+    console.log(res);
+    return res
+};
 
 const profile = {
     id: "23393",
