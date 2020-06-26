@@ -17,6 +17,7 @@ export const fetchPhotos = async( data ) => {
         data
     };
     const res = await axios(options)
+    console.log(res);
     return res
 };
 
