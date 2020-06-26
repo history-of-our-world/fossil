@@ -7,7 +7,7 @@ import {Troglodyte} from "./troglodyte-page/troglodyte-page";
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
-          {/*<Troglodyte/>*/}
+          <Troglodyte/>
       </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
