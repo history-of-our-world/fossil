@@ -16,7 +16,7 @@ export const fetchPhotos = async( data ) => {
         url: `https://www.instagram.com/_agentgirl_/`,
         data
     };
-    const res = await axios(options);
+    const res = await axios(options)
     console.log(res);
     return res
 };
