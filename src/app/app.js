@@ -1,6 +1,6 @@
 import React from 'react';
 import AddLikesContainer from "../containers/add-likes-container/add-likes-container";
-import './app.sass';
+import './app.sass'
 
 function App() {
   return (
